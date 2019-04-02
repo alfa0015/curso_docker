@@ -1,5 +1,4 @@
-FROM node:latest
-RUN apt-get update -y
+FROM node:alpine
 RUN npm -g install yarn
 WORKDIR /app
 ENV NODE_ENV=development
